@@ -344,7 +344,7 @@ Add your final reconstruction results here:
 
 | Evaluation                      |    Result |
 | ------------------------------- | --------: |
-| Correctly reconstructed puzzles | `XX / XX` |
-| Reconstruction accuracy         |     `XX%` |
+| Correctly reconstructed puzzles from test set | `65 / 65` |
+| Correctly reconstructed puzzles from random images set         |     `XX / XX` |
 
 ---
