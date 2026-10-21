@@ -1,0 +1,8 @@
+# Network only: score every ordered tile pair of every image, per grid size.
+base: _eval_base.yaml
+name: eval_network_test
+mode: network
+data: {images_dir: dataset/jigsaw_dataset/images/test}
+tiling: {mode: resize_image, tile_size: 128}   # whole image resized to (g*128)^2, then cut (as in the evaluation notebook)
+grid_sizes: [4, 5, 6]
+network: {pair_batch_size: 512, top_k: 3, save_pair_predictions: true}

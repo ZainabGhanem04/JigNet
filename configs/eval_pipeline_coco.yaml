@@ -1,0 +1,14 @@
+# Full pipeline: shuffle tiles -> JigNet -> ILP -> compare with the original, per grid size.
+base: _eval_base.yaml
+name: eval_pipeline_coco
+mode: pipeline
+data: {images_dir: dataset/COCO/resized_images}
+tiling: {mode: resize_tiles, tile_size: 128}   # (h//g) x (w//g) tiles resized to 128 (as in the solver notebook)
+grid_sizes: [3, 4, 5, 6]
+shuffle: true
+pair_batch_size: 256
+solver:
+  time_limit: 60          # seconds per puzzle
+  backend: auto           # auto | cbc | highs
+  probs: soft             # soft = softmax probabilities, hard = one-hot argmax
+  score: prob             # prob | log

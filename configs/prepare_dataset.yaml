@@ -1,0 +1,17 @@
+# python -m data.prepare --config configs/prepare_dataset.yaml
+seed: 42
+source_dir: dataset/raw/Jigsaw_Puzzles     # folder with the generated 512x512 images
+root: dataset/jigsaw_dataset               # output folder (images/, tiles/, metadata/)
+strip_suffix: "_0"                         # img_12_0.png -> img_12.png (copies, originals are not renamed)
+
+image: {height: 512, width: 512, channels: 3}
+grid_size: 4
+tile: {height: 128, width: 128}
+
+split:
+  train: 0.8                               # the remaining 20% is split 50/50 into val and test
+  existing_csv: null
+
+pairs:
+  hard_neg: 3
+  easy_neg: 3

@@ -1,0 +1,19 @@
+# python train.py --config configs/train.yaml
+base: _common.yaml
+name: jignet_exp2
+
+model:
+  num_classes: 5
+
+train:
+  batch_size: 128
+  epochs: 24
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  eta_min: 1.0e-6                          # cosine schedule, T_max = epochs
+  class_weights: [0.3, 2.4, 2.4, 2.4, 2.4] # or "auto" to compute balanced weights from the training pairs
+  checkpoint_every: 2
+  resume: true                             # continue from the latest checkpoint in the run folder
+
+output:
+  runs_dir: runs

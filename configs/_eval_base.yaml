@@ -1,0 +1,4 @@
+base: _common.yaml
+checkpoint: runs/jignet_exp2/last.pth      # bare state_dict, training checkpoint, full model, or checkpoint folder
+bootstrap: {n: 1000, seed: 0}              # image-level bootstrap for 95% confidence intervals
+output: {runs_dir: runs/eval}

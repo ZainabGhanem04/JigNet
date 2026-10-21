@@ -1,0 +1,5 @@
+# Classification report on the pairs.csv test split (what the training notebook printed).
+base: _eval_base.yaml
+name: eval_pairs_test
+mode: pairs
+split: test

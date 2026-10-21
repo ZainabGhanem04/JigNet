@@ -1,0 +1,5 @@
+# Only for regenerating the SDXL Turbo dataset (data/generate.py)
+diffusers
+transformers
+accelerate
+safetensors

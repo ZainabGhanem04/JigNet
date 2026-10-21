@@ -1,0 +1,17 @@
+# python -m data.generate --config configs/generate_dataset.yaml
+model_id: stabilityai/sdxl-turbo
+steps: 4
+guidance_scale: 0.0
+seed: 42                      # image seed = seed + 1000 * scene_idx + k  (recorded in generation_manifest.csv)
+scenes_file: data/scenes.txt  # 684 prompts, copied verbatim from the original notebook (106 are duplicates!)
+dedupe_scenes: false          # set true to drop duplicated prompts
+images_per_scene: 1
+skip_existing: true
+output_dir: dataset/raw/Jigsaw_Puzzles
+base_prompt: >
+  A {scene}, low-poly 3D render style, isometric view,
+  soft warm lighting from upper left, vibrant saturated colors,
+  clean flat shading with sharp polygon edges, minimal shadows,
+  white or light blue solid background, centered composition with
+  full subject visible, no text or watermarks,
+  square format, high resolution

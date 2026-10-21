@@ -1,0 +1,15 @@
+# Core (training, evaluation, solver, demo). Pin the versions you actually used before publishing:
+#   pip freeze | grep -i -E "torch|numpy|pandas|opencv|scikit|pulp|highspy|gradio|pyyaml"
+torch>=2.2
+torchvision>=0.17
+numpy
+pandas
+scikit-learn
+opencv-python-headless
+pyyaml
+matplotlib
+seaborn
+pillow
+pulp>=2.8
+highspy            # HiGHS backend, used automatically when PuLP does not ship CBC (PuLP >= 4)
+gradio>=4.0        # only needed for app.py

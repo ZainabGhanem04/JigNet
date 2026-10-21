@@ -1,0 +1,14 @@
+# Shared defaults, inherited by the other configs through `base: _common.yaml`.
+seed: 42
+deterministic: false        # true = bit-wise repeatable runs (slower)
+num_classes: 5
+
+data:
+  # Dataset folder produced by `python -m data.prepare`
+  root: dataset/jigsaw_dataset
+  pairs_csv: metadata/pairs.csv
+  legacy_prefix: null
+  num_workers: 2
+  # Channel statistics of the training pairs (values the released model was trained with).
+  mean: [0.5452349781990051, 0.6246451139450073, 0.4715678095817566]
+  std: [0.23454082012176514, 0.19042210280895233, 0.21782392263412476]
