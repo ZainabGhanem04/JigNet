@@ -36,7 +36,7 @@ The interface is intended primarily as a demonstration of the trained model and 
     </td>
   </tr>
 </table>
-2. Sample for landmark image
+2. Sample for a landscape image
 <table>
   <tr>
     <td>
