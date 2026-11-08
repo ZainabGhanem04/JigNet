@@ -20,6 +20,50 @@ The project explores whether a neural network can learn **spatial relationships 
 
 The interface is intended primarily as a demonstration of the trained model and its inference behavior.
 
+---
+
+1. Sample from the original AI generated dataset
+<table>
+  <tr>
+    <td>
+      <img src="demo/original_1.webp" alt="Dragon Image" width="300" />
+    </td>
+    <td>
+      <img src="demo/shuffled_1.webp" alt="Shuffled Dragon Image" width="300" />
+    </td>
+    <td>
+      <img src="demo/reconstructed_1.png" alt="Reconstructed Dragon Image" width="300"/>
+    </td>
+  </tr>
+</table>
+2. Sample for landmark image
+<table>
+  <tr>
+    <td>
+      <img src="demo/original_2.jpeg" alt="City scene" width="300" />
+    </td>
+    <td>
+      <img src="demo/shuffled_2.webp" alt="Shuffled City scene" width="300" />
+    </td>
+    <td>
+      <img src="demo/reconstructed_2.webp" alt="Reconstructed City scene" width="300"/>
+    </td>
+  </tr>
+</table>
+3. Sample from COCO dataset
+<table>
+  <tr>
+    <td>
+      <img src="demo/original_3.jpg" alt="Man skiing" width="300" />
+    </td>
+    <td>
+      <img src="demo/shuffled_3.webp" alt="Shuffled Image" width="300" />
+    </td>
+    <td>
+      <img src="demo/reconstruted_3.webp" alt="Reconstructed Image" width="300"/>
+    </td>
+  </tr>
+</table>
 
 # Repository Structure
 
